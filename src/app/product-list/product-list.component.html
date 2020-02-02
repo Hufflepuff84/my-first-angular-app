@@ -12,15 +12,11 @@
     <button (click)="share()">
     Share
   </button>
-</div>
-<button (click)="share()">
-  Share
-</button>
 
 <app-product-alerts
-  [product]="product">
-
-<app-product-alerts>/</app-product-alerts>
+  [product]="product" 
+  (notify)="onNotify()">
+</app-product-alerts>
 
 <!-- with *ngFor, the <div? repeats for each product in the list., the interpolation syntax {{}} dispays the names of the products. -->
 
